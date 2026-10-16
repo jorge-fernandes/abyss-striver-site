@@ -16,18 +16,25 @@ footer{margin-top:48px;color:var(--muted);font-size:14px}
 </head>
 <body><main>
 <h1>Abyss Striver – Privacy Policy</h1>
-<p><strong>Effective date:</strong> 2026-10-11 · <strong>Version:</strong> 1 (offline build)</p>
+<p><strong>Effective date:</strong> 2026-10-16 · <strong>Version:</strong> 2 (offline build)</p>
 <p>Abyss Striver ("the game") is developed and published by Jorge Fernandes, an individual developer based in the European Union ("we", "us"). This policy explains what the game does with your data. The short version: the current release collects nothing and sends nothing.</p>
 <h2>1. Data we collect</h2>
 <p><strong>None.</strong> The game does not collect, store on our servers, or share any personal data. It has no account system, no analytics, no advertising, no crash reporting and no network access. The Android package requests no permissions.</p>
 <h2>2. Data stored on your device</h2>
-<p>The game saves your progress locally, in the app's private storage on your device:</p>
+<p>The game saves your progress locally, in the app's private storage on your device. These are the files it writes:</p>
 <ul>
-<li>the current run (your hero, inventory and dungeon);</li>
-<li>the Hall of the Fallen (names you give your heroes, their depth, level and cause of death);</li>
-<li>achievements, the monster journal, daily-run results and settings (language, volumes).</li>
+<li>the current run (<code>run.json</code>: your hero, inventory and dungeon);</li>
+<li>the Hall of the Fallen (<code>hall.json</code>: the names you give your heroes, with their race, title, depth, level, kills, gold, cause of death, difficulty, date, run seed, epitaph, and the tags and frames they earned);</li>
+<li>achievements (<code>achievements.json</code>) and the monster journal (<code>journal.json</code>);</li>
+<li>Daily Descent results (<code>daily.json</code>: the hero's name, title, depth and level for each day played) and Weekly Trial results (<code>weekly.json</code>: your best depth in each week's trial);</li>
+<li>the Demon lords page (<code>lords.json</code>: each demon lord banished, at what depth, by which hero and on what date);</li>
+<li>the nemesis (<code>nemesis.json</code>: which rival killed your last hero, and that hero's name);</li>
+<li>the fallen hero's cache (<code>fallen_cache.json</code>: one item left behind for a later hero, with the depth and that hero's name);</li>
+<li>the playtest log (<code>runs.jsonl</code>: one line per finished run with the seed, difficulty, race and body type, depth, level, title, kills, bosses, gold, turns, potions left, masteries, weapons in hand, battles, flees, rests, play time and per-floor counters; no hero names; at most 300 runs are kept);</li>
+<li>settings (<code>settings.cfg</code>: language, volumes, text speed, vibration, which first-time tips you have seen, your last hero's name and look, and the date you last opened the game).</li>
 </ul>
 <p>These files never leave your device. Uninstalling the game deletes them. On Android, the game opts out of system backups (<code>allowBackup=false</code>), so they are not copied to Google's backup service either. The hero names you type are only shown back to you; please avoid entering other people's personal information.</p>
+<p>Two buttons copy text to your device's clipboard, and only when you press them: <strong>Copy playtest log</strong> in Settings, and <strong>Copy seed</strong> on the death screen. The game sends that text nowhere. It is there for you to paste into an e-mail or a message if you choose to, for example when a tester sends us the log.</p>
 <h2>3. Children</h2>
 <p>The game is not directed at children under 16 and contains fantasy violence. We do not knowingly collect data from anyone; see section 1.</p>
 <h2>4. Third parties</h2>
@@ -38,6 +45,7 @@ footer{margin-top:48px;color:var(--muted);font-size:14px}
 <p>Because we hold no personal data about you, there is nothing for us to access, correct, export or delete. If you believe the game has stored something it should not have, contact us and we will help.</p>
 <h2>7. Changes</h2>
 <p>We will post changes to this page and update the effective date above. Material changes will also be mentioned in the game's update notes.</p>
+<p>Version 2 (2026-10-16): lists every file the game writes and the two clipboard buttons. Nothing changed in what is collected: still nothing.</p>
 <h2>8. Contact</h2>
 <p>Jorge Fernandes · e-mail: <a href="mailto:jorge.fernandes.dev@gmail.com">jorge.fernandes.dev@gmail.com</a></p>
 <p>Online copy: <a href="https://jorge-fernandes.github.io/abyss-striver-site/privacy/">jorge-fernandes.github.io/abyss-striver-site/privacy/</a></p>
